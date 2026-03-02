@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Divyasree Gollapalli — Web Developer & Aspiring AI Agent. Building intelligent automation, AI workflows, and modern digital experiences.">
+    <meta name="keywords" content="Divyasree Gollapalli, Web Developer, AI Agent, Portfolio, n8n, Python, JavaScript">
+    <meta name="author" content="Divyasree Gollapalli">
+    <title>Divyasree Gollapalli | Web Developer & Aspiring AI Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== PARTICLE CANVAS BACKGROUND ===== -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>DG<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <span class="toggle-icon sun">&#9728;</span>
+                    <span class="toggle-icon moon">&#9790;</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name" id="heroName">
+                <span class="name-glow">Divyasree Gollapalli</span>
+            </h1>
+            <div class="hero-title-wrapper">
+                <span class="hero-title-prefix">&gt;&nbsp;</span>
+                <span class="hero-title" id="heroTitle"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-tagline">Crafting intelligent digital experiences &amp; shaping the future with AI</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary magnetic-btn">
+                    <span>View My Work</span>
+                    <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary magnetic-btn">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="title-accent">//</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="about-avatar reveal-left">
+                        <div class="avatar-ring"></div>
+                        <img src="divya.jpg" alt="Divyasree Gollapalli" class="avatar-img">
+                    </div>
+                    <div class="about-text reveal-right">
+                        <p>
+                            I'm <strong>Divyasree Gollapalli</strong> — an innovative Web Developer and aspiring AI
+                            Agent
+                            with a relentless drive to merge cutting-edge technology with creative problem-solving.
+                            I specialize in building modern, responsive digital experiences and intelligent automation
+                            workflows that push the boundaries of what's possible on the web.
+                        </p>
+                        <p>
+                            My mission is to architect the next generation of AI-powered solutions — from smart chatbots
+                            and automated workflows to seamless digital platforms. With a strong foundation in
+                            full-stack
+                            development and a passion for artificial intelligence, I'm on a path to become a leading
+                            force
+                            in the AI agent ecosystem, transforming how humans and machines collaborate.
+                        </p>
+                        <div class="about-meta">
+                            <div class="meta-item">
+                                <span class="meta-icon">&#128205;</span>
+                                <span>Andhra Pradesh, India</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">&#127919;</span>
+                                <span>Aspiring AI Agent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="title-accent">//</span> Skills & Expertise
+            </h2>
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skills-column reveal-left">
+                    <h3 class="skills-subtitle">
+                        <span class="subtitle-icon">&#128187;</span> Technical Skills
+                    </h3>
+                    <div class="skill-bars">
+                        <div class="skill-item" data-progress="90">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="85">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="80">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="75">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="80">
+                            <div class="skill-header">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="85">
+                            <div class="skill-header">
+                                <span class="skill-name">n8n</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="80">
+                            <div class="skill-header">
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-progress="75">
+                            <div class="skill-header">
+                                <span class="skill-name">Canva</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skills-column reveal-right">
+                    <h3 class="skills-subtitle">
+                        <span class="subtitle-icon">&#129504;</span> Soft Skills
+                    </h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card glass-card">
+                            <div class="soft-skill-icon">&#128172;</div>
+                            <span>Communication</span>
+                        </div>
+                        <div class="soft-skill-card glass-card">
+                            <div class="soft-skill-icon">&#128081;</div>
+                            <span>Leadership</span>
+                        </div>
+                        <div class="soft-skill-card glass-card">
+                            <div class="soft-skill-icon">&#129513;</div>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="soft-skill-card glass-card">
+                            <div class="soft-skill-icon">&#129309;</div>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="soft-skill-card glass-card">
+                            <div class="soft-skill-icon">&#127793;</div>
+                            <span>Adaptability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="title-accent">//</span> Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card tilt-card reveal-up" id="project-1">
+                    <div class="project-header">
+                        <div class="project-icon">&#129302;</div>
+                        <div class="project-links">
+                            <a href="https://github.com/divyasree36/AI-chatbot.git" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI Chatbot</h3>
+                    <p class="project-desc">Built an automated AI-powered chatbot workflow using n8n to handle real-time
+                        user queries and intelligent responses.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass-card tilt-card reveal-up" id="project-2">
+                    <div class="project-header">
+                        <div class="project-icon">&#127760;</div>
+                        <div class="project-links">
+                            <a href="https://github.com/divyasree36/Digital-Growth-Agency.git" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Digital Growth Agency</h3>
+                    <p class="project-desc">Designed and developed a responsive digital growth agency website using
+                        HTML, CSS, and JavaScript with modern UI and optimized engagement sections.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="title-accent">//</span> Education
+            </h2>
+            <div class="timeline reveal-up">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 — 2028</span>
+                        <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+                        <p class="timeline-place">Annamacharya Institute of Technology and Sciences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="title-accent">//</span> Experience
+            </h2>
+            <div class="timeline reveal-up">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Intern</span>
+                        <h3 class="timeline-title">Web Development Intern</h3>
+                        <p class="timeline-place">ApexPlanet</p>
+                        <p class="timeline-desc">Gained hands-on experience building responsive web applications,
+                            collaborating with development teams, and applying modern front-end technologies in
+                            real-world projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal-up">
+                <span class="title-accent">//</span> Get In Touch
+            </h2>
+            <div class="contact-wrapper reveal-up">
+                <div class="contact-info">
+                    <h3>Let's Build Something Amazing</h3>
+                    <p>Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <a href="mailto:divyasree09147@gmail.com" class="contact-detail-item">
+                            <span class="contact-icon">&#9993;</span>
+                            <span>divyasree09147@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/divya-sree-gollapalli-4b407a317/" target="_blank"
+                            rel="noopener noreferrer" class="contact-detail-item">
+                            <span class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/divyasree36" target="_blank" rel="noopener noreferrer"
+                            class="contact-detail-item">
+                            <span class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required
+                            autocomplete="name">
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required
+                            autocomplete="email">
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                            required></textarea>
+                        <span class="error-msg" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary magnetic-btn" id="submitBtn">
+                        <span>Send Message</span>
+                        <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                        </svg>
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">&#10003;</div>
+                        <p>Message sent successfully!</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>DG<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <p class="footer-text">&copy; 2026 Divyasree Gollapalli. Crafted with passion &amp; code.</p>
+                <div class="footer-socials">
+                    <a href="mailto:divyasree09147@gmail.com" aria-label="Email" class="footer-social-link">&#9993;</a>
+                    <a href="https://www.linkedin.com/in/divya-sree-gollapalli-4b407a317/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn" class="footer-social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/divyasree36" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub" class="footer-social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
